@@ -1,9 +1,12 @@
+import { Children } from "react";
 import { Header } from "widgets";
 
 function Layout() {
     return (
         <div>
-            <Header />
+            <Header>
+                {Children}
+            </Header>
         </div>
     );
 }

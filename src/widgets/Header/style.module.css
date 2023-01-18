@@ -44,10 +44,13 @@
 
 .cartWrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
 .cart{
+    color: #5C5C5C;
     cursor: pointer;
 }
 
@@ -61,6 +64,8 @@
     cursor: pointer;
 }
 
-.liked{
+.liked, .user{
+    color: #5C5C5C;
     cursor: pointer;
 }
+
