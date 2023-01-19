@@ -1,3 +1,4 @@
+import React from 'react';
 import addButton from 'assets/ProductImg/addButton.svg';
 
 import style from './style.module.css';
@@ -8,7 +9,7 @@ function ProductCard(props) {
     return (
         <div className={style.productWrapper}>
             <div className={style.image}>
-                <img src={image} alt="Image" />
+                <img className={style.image} src={image} alt="Image" />
             </div>
             <div className={style.description}>{description}</div>
             <div className={style.productFooter}>

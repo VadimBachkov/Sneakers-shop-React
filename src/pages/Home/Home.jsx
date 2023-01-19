@@ -6,13 +6,17 @@ import { ProductModel } from "./model";
 
 import ProductCard from "components/ProductCard";
 
+import style from './style.module.css';
+
 function Home() {
     useEffect(() => {
         ProductModel.fetch();
     }, []);
 
     return (
-        <div>
+      <div className={style.menuWrapper}>
+        <div className={style.menuTitle}>All Sneakers</div>
+        <div className={style.productsWrapper}>
              {ProductModel.loading ? (
           <>Loading....</>
         ) : (
@@ -27,6 +31,7 @@ function Home() {
         ))
       )}
         </div>
+      </div>
     )
 }
 
