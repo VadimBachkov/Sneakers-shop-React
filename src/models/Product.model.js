@@ -115,7 +115,7 @@ class ProductsModel {
             ];
 
             this.loading = false;
-        }, 400);
+        }, 1000);
     }
 }
 

@@ -48,12 +48,18 @@
 }
 
 .btn {
-    border: none;
+    padding: 10px 15px;
     background: #FFFFFF;
     border: 1px solid #F2F2F2;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: linear-gradient(180deg, #89F09C 0%, #3CC755 100%);
+    color: #FFFFFF;
 }
 
 .addButton{
-    border: none;
+    color: #000000;
 }

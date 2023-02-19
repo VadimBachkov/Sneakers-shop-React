@@ -19,7 +19,7 @@ function ProductCard(props) {
                 </div>
                 <div className={style.addBtn}>
                     <button className={style.btn}>
-                        <img src={addButton} />
+                        <img src={addButton} alt="button" />
                     </button>
                 </div>
             </div>

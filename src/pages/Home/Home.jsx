@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import React from "react";
 import { observer } from "mobx-react-lite";
 
-import { ProductModel } from "./model";
+import { ProductModel } from "../../models";
 
 import ProductCard from "components/ProductCard";
 
