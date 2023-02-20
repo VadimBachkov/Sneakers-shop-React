@@ -40,78 +40,10 @@ class ProductsModel {
                     price: 259,
                 },
                 {
-                    image: AirMax,
-                    description: "Nike Air Max 270",
-                    price: 299,
-
-                },
-                {
-                    image: BlazerMid,
-                    description: "Nike Blazer Mid Suede",
-                    price: 359,
-                },
-                {
                     image: NikeBlazer,
                     description: "Nike Blazer Mid Suede",
                     price: 399,
-                },
-                {
-                    image: PumaX,
-                    description: "Puma X Future Rider",
-                    price: 259,
-                },
-                {
-                    image: AirMax,
-                    description: "Nike Air Max 270",
-                    price: 299,
-
-                },
-                {
-                    image: BlazerMid,
-                    description: "Nike Blazer Mid Suede",
-                    price: 359,
-                },
-                {
-                    image: NikeBlazer,
-                    description: "Nike Blazer Mid Suede",
-                    price: 399,
-                },
-                {
-                    image: PumaX,
-                    description: "Puma X Future Rider",
-                    price: 259,
-                },
-                {
-                    image: AirMax,
-                    description: "Nike Air Max 270",
-                    price: 299,
-
-                },
-                {
-                    image: BlazerMid,
-                    description: "Nike Blazer Mid Suede",
-                    price: 359,
-                },
-                {
-                    image: NikeBlazer,
-                    description: "Nike Blazer Mid Suede",
-                    price: 399,
-                },
-                {
-                    image: PumaX,
-                    description: "Puma X Future Rider",
-                    price: 259,
-                },
-                {
-                    image: NikeBlazer,
-                    description: "Nike Blazer Mid Suede",
-                    price: 399,
-                },
-                {
-                    image: PumaX,
-                    description: "Puma X Future Rider",
-                    price: 259,
-                },
+                }
             ];
 
             this.loading = false;

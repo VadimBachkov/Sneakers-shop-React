@@ -23,7 +23,7 @@ function Header() {
         <div className={style.liked}>
           <img className={style.liked} src={Liked} alt="Liked" />
         </div>
-        <div className={style.user}>
+        <div className={style.user} >
           <img className={style.user} src={Account} alt="Account" />
         </div>
       </div>

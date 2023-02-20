@@ -7,6 +7,8 @@ import { ProductModel } from "../../models";
 import ProductCard from "components/ProductCard";
 
 import style from './style.module.css';
+import { Link } from "react-router-dom";
+import { ROUTES } from "shared/consts";
 
 function Home() {
     useEffect(() => {
@@ -16,6 +18,9 @@ function Home() {
     return (
       <div className={style.menuWrapper}>
         <div className={style.menuTitle}>All Sneakers</div>
+        <button>Profile
+          <Link to={ROUTES.POSTS}></Link>
+        </button>
         <div className={style.productsWrapper}>
              {ProductModel.loading ? (
           <>Loading....</>
