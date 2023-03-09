@@ -9,7 +9,7 @@ import { UserModel } from 'models'
 import { ROUTES } from 'shared/consts'
 import { emailValidation, passwordValidation } from 'shared/helpers'
 
-import style from "./style.module.css"
+import style from './style.module.css'
 
 
 const SignInSchema = Yup.object().shape({
@@ -54,6 +54,7 @@ function Profile() {
                             gap: '12px',
                         }}
                     >
+                        <FormInput name="name" />
                         <FormInput name="email" />
                         <FormInput name="password" />
                         <Button type="submit" variant="contained" sx={{marginBottom:3}}>

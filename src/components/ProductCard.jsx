@@ -1,10 +1,13 @@
 import React from 'react';
-import addButton from 'assets/ProductImg/addButton.svg';
+
+import IconButton from '@mui/material/IconButton';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+
 
 import style from './style.module.css';
 
 function ProductCard(props) {
-    const {image, description, price} = props;
+    const { image, description, price } = props;
 
     return (
         <div className={style.productWrapper}>
@@ -18,14 +21,14 @@ function ProductCard(props) {
                     <div className={style.price}>{price}, $</div>
                 </div>
                 <div className={style.addBtn}>
-                    <button className={style.btn}>
-                        <img src={addButton} alt="button" />
-                    </button>
+                    <IconButton color="primary" aria-label="add to shopping cart" size='large'>
+                        <AddShoppingCartIcon color='success' fontSize="inherit" />
+                    </IconButton>
                 </div>
             </div>
         </div>
     )
-    
+
 }
 
 export default ProductCard

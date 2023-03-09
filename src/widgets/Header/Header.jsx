@@ -1,11 +1,18 @@
+import { useNavigate } from 'react-router-dom';
+import { ROUTES } from 'shared/consts';
+
 import Logo from 'assets/HeaderImg/Logo.svg';
 import Cart from 'assets/HeaderImg/Cart.svg';
 import Liked from 'assets/HeaderImg/Liked.svg';
 import Account from 'assets/HeaderImg/Account.svg';
+import { Avatar, Button } from '@mui/material'
 
 import style from 'widgets/Header/style.module.css';
 
+
 function Header() {
+  const navigate = useNavigate();
+
   return (
     <div className={style.headerWrapper}>
       <div className={style.logoWrapper}>
@@ -25,6 +32,16 @@ function Header() {
         </div>
         <div className={style.user} >
           <img className={style.user} src={Account} alt="Account" />
+        </div>
+        <div className={style.button}>
+          <Button
+            onClick={() => navigate(ROUTES.PROFILE)}
+            variant="outlined">Sing In</Button>
+        </div>
+        <div className={style.button}>
+          <Button
+            onClick={() => navigate(ROUTES.REGISTRATION)}
+            variant="contained">Sing Up</Button>
         </div>
       </div>
     </div>
