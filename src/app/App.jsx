@@ -14,7 +14,8 @@ function App() {
       email: '',
       phone: '',
       password: '',
-      shoppingCart: []
+      shoppingCart: [],
+      favorites: [],
     }
   });
 

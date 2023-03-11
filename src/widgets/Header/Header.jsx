@@ -1,5 +1,7 @@
+import React, {useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ROUTES } from 'shared/consts';
+import { Store } from 'app/App';
 
 import Logo from 'assets/HeaderImg/Logo.svg';
 import Cart from 'assets/HeaderImg/Cart.svg';
@@ -12,6 +14,7 @@ import style from 'widgets/Header/style.module.css';
 
 function Header() {
   const navigate = useNavigate();
+  const [store] = useContext(Store);
 
   return (
     <div className={style.headerWrapper} >
@@ -24,11 +27,10 @@ function Header() {
       </div>
       <div className={style.cartWrapper}>
         <div className={style.cart} onClick={()=> navigate(ROUTES.SHOPPINGCART)}>
-          <img className={style.cart} src={Cart} alt="Cart" />
+          <img className={style.cart} src={Cart} alt="Cart" /> {store.user.shoppingCart.length}
         </div>
-        <div className={style.orderSum}>555 BYN</div>
-        <div className={style.liked}>
-          <img className={style.liked} src={Liked} alt="Liked" />
+        <div className={style.liked} onClick={()=> navigate(ROUTES.FAVORITES)}>
+          <img className={style.liked} src={Liked} alt="Liked" /> {store.user.favorites.length}
         </div>
         <div className={style.user} >
           <img className={style.user} src={Account} alt="Account" />
