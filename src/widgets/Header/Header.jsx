@@ -14,8 +14,8 @@ function Header() {
   const navigate = useNavigate();
 
   return (
-    <div className={style.headerWrapper}>
-      <div className={style.logoWrapper}>
+    <div className={style.headerWrapper} >
+      <div className={style.logoWrapper} onClick={()=>navigate(ROUTES.HOME)}>
         <img className={style.logo} src={Logo} alt="Logo" />
         <div className={style.titleWrapper}>
           <div className={style.title}>REACT SNEAKERS</div>
@@ -23,7 +23,7 @@ function Header() {
         </div>
       </div>
       <div className={style.cartWrapper}>
-        <div className={style.cart}>
+        <div className={style.cart} onClick={()=> navigate(ROUTES.SHOPPINGCART)}>
           <img className={style.cart} src={Cart} alt="Cart" />
         </div>
         <div className={style.orderSum}>555 BYN</div>
