@@ -1,0 +1,143 @@
+.wrapper{
+    margin-top: 40px;
+}
+.footerItems{
+    display: flex;
+    gap: 90px;
+    padding: 56px 220px 77px 220px;
+
+    background:#E3ECF5;
+    background-repeat: no-repeat;
+    background-position: 93% 93%;
+}
+
+.logoWrapper{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+
+.logoTitle{
+    font-size: 40px;
+    font-family: Panton;
+    font-weight: 800;
+    line-height: 47px;
+}
+
+.logoSubtitle{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.footerItems{
+    display: flex;
+}
+
+.footerInfo{
+    display: flex;
+    flex-direction: column;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #0E0C0D;
+    opacity: 0.85;
+}
+
+.caloricAndRights{
+    display: flex;
+    gap: 52px;
+    margin-bottom: 23px;
+}
+
+.social{
+    margin-bottom: 15px;
+}
+
+.footerSocial{
+    display: flex;
+    gap: 170px;
+    margin-bottom: 45px;
+
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.footerRights{
+   display: flex;
+   align-items: center;
+   gap: 170px; 
+}
+
+.rightsReserved{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0E0C0D;
+    opacity: 0.8;
+}
+
+.cards{
+    display: flex;
+    gap: 18px;
+}
+
+.feedbackTitle{
+    padding-top: 20px;
+    margin-bottom: 36px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #0E0C0D;
+    text-transform: uppercase;
+}
+
+.feedbackBtnWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 460px;
+    margin-bottom: 45px;
+}
+
+.feedbackBtn{
+    padding: 11px 35px;
+
+    background-color: #fff;
+    border: 2px solid #E3ECF5;
+    border-radius: 13px;
+}
+
+.writeToUsBtn{
+    padding: 18px 65px;
+
+    color: #0E0C0D;
+    font-size: 13px;
+    font-weight: 700;
+    border: 2px solid #E3ECF5;
+    border-radius: 13px;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+.number{
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color:#FF2E65;
+}
+
+.contactsBtn{
+    padding: 7px 27px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    color:#696F7A;
+    background-color: #F3F3F7;
+    border-radius: 28px;
+    border: none;
+    cursor: pointer;
+}

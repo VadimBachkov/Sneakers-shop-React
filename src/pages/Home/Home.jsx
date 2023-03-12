@@ -1,10 +1,11 @@
 import React from "react";
 import { useEffect } from "react";
 import { observer } from "mobx-react-lite";
+import { ProductCard } from "components/ProductCard";
 
-import ProductCard from "components/ProductCard";
 import style from './style.module.css';
 import { ProductModel } from "../../models";
+
 
 function Home() {
 
@@ -17,7 +18,7 @@ function Home() {
       <div className={style.menuTitle}>All Sneakers</div>
       <div className={style.productsWrapper}>
         {ProductModel.loading ? (
-          <>Loading....</>
+          <>Loading...</>
         ) : (
           ProductModel.products.map((item) => (
             <ProductCard

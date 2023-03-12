@@ -21,7 +21,7 @@ function Header() {
       <div className={style.logoWrapper} onClick={()=>navigate(ROUTES.HOME)}>
         <img className={style.logo} src={Logo} alt="Logo" />
         <div className={style.titleWrapper}>
-          <div className={style.title}>REACT SNEAKERS</div>
+          <div className={style.title}>SNEAKERS</div>
           <div className={style.secondaryTitle}>Best sneaker store</div>
         </div>
       </div>
@@ -33,7 +33,7 @@ function Header() {
           <img className={style.liked} src={Liked} alt="Liked" /> {store.user.favorites.length}
         </div>
         <div className={style.user} >
-          <img className={style.user} src={Account} alt="Account" />
+          <Avatar></Avatar>
         </div>
         <div className={style.button}>
           <Button

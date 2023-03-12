@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 
-import { Home, Registration, Profile, ShoppingCart, Favorites } from 'pages'
+import { Home, Registration, Profile, ShoppingCart, Favorites, Checkout } from 'pages'
 import { ROUTES } from 'shared/consts'
 
 function Router() {
@@ -10,8 +10,8 @@ function Router() {
             <Route path={ROUTES.REGISTRATION} element={<Registration />} />
             <Route path={ROUTES.PROFILE} element={<Profile />} />
             <Route path={ROUTES.SHOPPINGCART} element={<ShoppingCart />} />
-            <Route path={ROUTES.SHOPPINGCART} element={<ShoppingCart />} />
             <Route path={ROUTES.FAVORITES} element={<Favorites />} />
+            <Route path={ROUTES.CHECKOUTORDER} element={<Checkout />} />
         </Routes>
     )
 }

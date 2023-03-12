@@ -1,12 +1,12 @@
-import { Children } from "react";
-import { Header } from "widgets";
+import React from "react";
+import { Header , Footer} from "widgets";
 
-function Layout() {
+function Layout({children}) {
     return (
         <div>
-            <Header>
-                {Children}
-            </Header>
+            <Header />
+                {children}
+            <Footer />
         </div>
     );
 }

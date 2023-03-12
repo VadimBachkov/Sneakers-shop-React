@@ -21,7 +21,7 @@ const SignInSchema = Yup.object().shape({
     password: passwordValidation(),
 })
 
-function Profile() {
+function Registration() {
     const navigate = useNavigate()
 
     return (
@@ -78,4 +78,4 @@ function Profile() {
     )
 }
 
-export default observer(Profile)
+export default observer(Registration)

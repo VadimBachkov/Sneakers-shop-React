@@ -22,8 +22,9 @@ function App() {
   return (
     <BrowserRouter>
       <Store.Provider value={[store, setStore]}>
-        <Layout />
+        <Layout>
         <Router />
+        </Layout>
       </Store.Provider>
     </BrowserRouter>
   )
