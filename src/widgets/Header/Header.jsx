@@ -6,11 +6,10 @@ import { Store } from 'app/App';
 import Logo from 'assets/HeaderImg/Logo.svg';
 import Cart from 'assets/HeaderImg/Cart.svg';
 import Liked from 'assets/HeaderImg/Liked.svg';
-import Account from 'assets/HeaderImg/Account.svg';
-import { Avatar, Button } from '@mui/material'
+import { Avatar, Button } from '@mui/material';
 
+import { HomeModel } from 'models';
 import style from 'widgets/Header/style.module.css';
-
 
 function Header() {
   const navigate = useNavigate();
@@ -33,7 +32,9 @@ function Header() {
           <img className={style.liked} src={Liked} alt="Liked" /> {store.user.favorites.length}
         </div>
         <div className={style.user} >
-          <Avatar></Avatar>
+          <Avatar
+          onClick={() => HomeModel.getAction()}
+          ></Avatar>
         </div>
         <div className={style.button}>
           <Button

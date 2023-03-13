@@ -8,7 +8,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import Liked from 'assets/HeaderImg/Liked.svg';
 import style from './style.module.css';
 
-function OrderCard({ image, description, price ,index}) {
+function OrderCard({ image, description, price ,onDelete}) {
     const [store, setStore] = useContext(Store);
 
     let count = 0;
@@ -46,17 +46,6 @@ function OrderCard({ image, description, price ,index}) {
             }));
         }
     };
-    function deleteOrder(id) {
-        setStore((pre) => ({
-            ...pre,
-            user: {
-                ...pre.user,
-                shoppingCart: store.user.shoppingCart.filter(
-                    (item) => item.description !== id
-                ),
-            },
-        }));
-    }
 
     return (
         <div className={style.productWrapper}>
@@ -74,7 +63,8 @@ function OrderCard({ image, description, price ,index}) {
                     <IconButton aria-label="delete" size='large'>
                         <DeleteIcon
                         description = {description}
-                        onClick={deleteOrder} />
+                        price = {price}
+                        onClick={()=>onDelete(price)} />
                     </IconButton>
                 </div>
             </div>

@@ -17,3 +17,43 @@
     line-height: 39px;
     color: #000000;
 }
+
+.sliderWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+
+    background-image: url("../../assets/SliderImg/backgroung.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.titleWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #71cb10;
+}
+
+.secondaryTitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.homeImg{
+    margin-top: 6px;
+}

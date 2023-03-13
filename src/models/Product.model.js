@@ -21,28 +21,28 @@ class ProductsModel {
                 {
                     image: AirMax,
                     description: "Nike Air Max 270",
-                    price: 299,
+                    price: 99,
 
                 },
                 {
                     image: BlazerMid,
                     description: "Nike Blazer Mid Suede",
-                    price: 359,
+                    price: 119,
                 },
                 {
                     image: NikeBlazer,
                     description: "Nike Blazer Mid Suede",
-                    price: 399,
+                    price: 129,
                 },
                 {
                     image: PumaX,
                     description: "Puma X Future Rider",
-                    price: 259,
+                    price: 109,
                 },
                 {
                     image: NikeBlazer,
                     description: "Nike Blazer Mid Suede",
-                    price: 399,
+                    price: 129,
                 }
             ];
 

@@ -12,7 +12,7 @@ import Box from 'assets/OrdersImg/box.png';
 import style from './style.module.css';
 import { ROUTES } from "shared/consts";
 
-function ShoppingCart({ image, description, price }) {
+function ShoppingCart({ image, description, price, onDelete }) {
     const [store, setStore] = useContext(Store);
     console.log(store);
 
@@ -24,7 +24,7 @@ function ShoppingCart({ image, description, price }) {
             user: {
                 ...pre.user,
                 shoppingCart: store.user.shoppingCart.filter(
-                    (item) => item.description !== id
+                    (item) => item.price !== id
                 ),
             },
         }));
