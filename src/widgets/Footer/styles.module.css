@@ -3,12 +3,12 @@
 }
 .footerItems{
     display: flex;
-    gap: 90px;
-    padding: 56px 220px 77px 220px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
 
     background:#E3ECF5;
     background-repeat: no-repeat;
-    background-position: 93% 93%;
 }
 
 .logoWrapper{
@@ -140,4 +140,22 @@
     border-radius: 28px;
     border: none;
     cursor: pointer;
+}
+
+@media(max-width:480px){
+     .wrapper{
+        display: none;
+    }
+
+   
+}
+
+@media(max-width:1200px){
+    .footerItems{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+  
 }

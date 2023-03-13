@@ -1,6 +1,6 @@
 .productsWrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     justify-content: center;
     gap: 30px;
 }
@@ -56,4 +56,28 @@
 
 .homeImg{
     margin-top: 6px;
+}
+
+@media(max-width:1080px){
+    .sliderWrapper{
+        display: none;
+    }
+}
+
+@media(max-width:1200px){
+    .menuTitle {
+       justify-content: center;
+       align-items: center;
+       margin-left: 40px;
+   }
+
+}
+
+@media(max-width:1400px){
+    .menuTitle {
+       justify-content: center;
+       align-items: center;
+       margin-left: 40px;
+   }
+
 }

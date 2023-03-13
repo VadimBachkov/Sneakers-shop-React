@@ -5,8 +5,8 @@
 
 .headerWrapper {
     display: flex;
-    justify-content: space-between;
     padding: 45px;
+    justify-content: space-between;
 
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
@@ -69,3 +69,22 @@
     cursor: pointer;
 }
 
+@media(max-width: 480px){
+    .headerWrapper{
+        width: 100%;
+    }
+
+    .logoWrapper{
+        justify-content: flex-start;
+    }
+
+    .cartWrapper{
+        justify-content: flex-end;
+    } 
+}
+
+@media(max-width:600px){
+    .logoWrapper{
+        display: none;
+    }
+}
